@@ -2,8 +2,8 @@
 Basic fullstack hangman application using AngularJS, NodeJS, Express and MongoDB
 
 # Installation
-1.Clone repo
-2.run npm install
+1. Clone repo
+2. run npm install
 
 # Usage
 run npm start
