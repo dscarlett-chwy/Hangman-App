@@ -1,0 +1,67 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: ghostwhite;
+}
+button {
+  outline: none;
+  border: none;
+  background: none;
+  padding: .5rem 1rem;
+  background: periwinkle;
+  border: 1px solid lightgray;
+  color: darkgray;
+  font-size: 1rem;
+  min-width: 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button{
+  background-color: #1769aa;
+  color: white;
+}
+button:hover {
+  background: #1769aa;
+  color: white;
+  
+  transform: scale(.75);
+  z-index: 2;
+}
+h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3em;
+  margin-bottom: -8px;
+}
+h2{
+  color: red;
+  font-weight: lighter;
+  font-size: 1em;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  width: 100%;
+}
+.gameInfo{
+  font-size: 1.2em;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hiddenWord{
+  font-size: 2em;
+}
+#winLose{
+  font-size: 3em;
+}

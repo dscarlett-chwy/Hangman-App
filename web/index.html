@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Hangman App</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+      <link rel="stylesheet" href="/style.css">
+   </head>
+   <body ng-app="HangmanApp" ng-controller="GameController">
+      <h1>Hangman App</h1>
+      <div class="container">
+         <section class="gameInfo">
+            <div>
+               Incorrect Guesses Left : {{guessesLeft}}
+            </div>
+            <div>
+               Your Incorrect Guesses :: <span ng-repeat="letter in incorrectLettersChosen">
+               {{letter}}
+               </span>
+            </div>
+            <div>
+               Your Correct Guesses :: <span ng-repeat="letter in correctLettersChosen track by $index">
+               {{letter}}
+            </div>
+            <section class="scores">
+               <div>
+                  <div>Wins: {{wins}}</div>
+                  <div>Loses: {{loses}}</div>
+               </div>
+            </section>
+            <div>You have to guess: <span id="hiddenWord">{{displayWord}}</span></div>
+            <h2 id="winLose"></h2>
+            <a style="display: none;" id="newGame" href="/">Start New Game</a>
+         </section>
+         <section class="gameSetUp">
+            <section class="gallows">
+               <div>
+                  <img ng-src='{{imageSrc}}' alt="Hangman Gallows">
+               </div>
+            </section>
+            <section class="inputs">
+               <div>
+                  <div>
+                     <input type="text" name="guess" ng-model="input.letter" >
+                     <button ng-click="letterChosen()" >Submit</button>
+                     <h2 id="invalid"></h2>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
