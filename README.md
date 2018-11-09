@@ -55,5 +55,5 @@ I also gain more experiene using http.post requests and how you can make api cal
 
 # If I have time to go back
 If I have time to go back and work on this more I would pretty up the UI experience with some more css styling. 
-I would also like to add admin/login functionality to help with preventing users to cheat. That way users can make profiles and then I can store thier win/loss totals in thier own forms. I also want to fix my gitignore so that I can exlude my mongodb url and my node-moduals folder for when I reuplaod to github.
+I would also like to add admin/login functionality to help with preventing users to cheat. That way users can make profiles and then I can store thier win/loss totals in thier own forms. I also want to fix my gitignore so that I can exlude my mongodb url and my node-moduals folder for when I reuplaod to github. I would also like to hos my app on AWS when I get some more time after working on the above.
 
