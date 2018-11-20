@@ -56,7 +56,7 @@ This was my first time using angular.js.  I learned a lot about Angular’s func
 
  A challenge in the project was apply all the business logic on the server side, so that the user can’t cheat. To accomplish this in a short amount of time with limited knowledge instead of using a login functionality for security and better storage, I handled the scaling using a sessionID and gameID from my localStorage in the browser. I did this so multiple users can play simultaneously.
 
-I knew your sessionID, I could save that to my browser's localStorage and I could play on your games. I was happy to gain more experience using localStorage and making API http requests.
+But if I knew your sessionID, I could save that to my browser's localStorage and I could play on your games. I was happy to gain more experience using localStorage and making API http requests.
 
 # If I had unlimited time...
 
