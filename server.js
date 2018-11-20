@@ -20,8 +20,6 @@ console.log(`app listening on ${port}`)
 
 var url = 'mongodb://hangmanUser:derek99@ds155695.mlab.com:55695/hangman_game';
 
-// I'm using the random-word npm package,
-
 //connect to our database in mlad to store our game data through mongo
 MongoClient.connect(url, {
     useNewUrlParser: true
@@ -40,6 +38,7 @@ MongoClient.connect(url, {
         if (sessionID === null) {
             sessionID = uuidv4();
         }
+        // I'm using the random-word npm package,
         let word = randomWord();
         let maskedWord = word.replace(/./g, '*');
         let gallowsSrc = 0;
