@@ -155,6 +155,7 @@ function checkGuess(letter, gameData) {
             gameWon = true;
         }
     } else {
+        correct = false;
         guessesRemaining--;
         gallowsSrc++;
         incorrectGuesses.push(letter.toLowerCase())
