@@ -81,6 +81,7 @@ app.controller("GameController", ['$scope', '$timeout', '$http', function($scope
             };
             //converts my JavaScript object to a JSON string, 
             let guessData = JSON.stringify(data)
+            //denotes what the content is encoded in
             let config = {
                 headers: {
                     'Content-Type': 'application/json'
