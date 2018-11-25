@@ -79,7 +79,7 @@ app.controller("GameController", ['$scope', '$timeout', '$http', function($scope
                 gameID: localStorage.getItem('gameID'),
                 letter: $scope.input.letter
             };
-
+            //converts my JavaScript object to a JSON string, 
             let guessData = JSON.stringify(data)
             let config = {
                 headers: {
