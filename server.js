@@ -59,7 +59,7 @@ MongoClient.connect(url, {
         db.insertOne(gameData).then(data => {
             // an _id field will automatically be created on the inserted
             // document, and this value will be returned to you on the prop
-            // called 'insertedId'. You want to send this value (along with sessionID)
+            // called 'insertedId'. YI want to send this value (along with sessionID)
             // back to the browser, so that it can store them, and send them
             // along on all of the "guess letter" requests, so that we know
             // who is playing (based on sessionID), and what game they
