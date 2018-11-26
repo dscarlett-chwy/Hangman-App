@@ -100,12 +100,12 @@ app.controller("GameController", ['$scope', '$timeout', '$http', function($scope
                 let winner = result.data.gameWon;
                 let loser = result.data.gameLost;
                 //check whether the user won or not then display a message based off the result
-                if (result.data.gameWon) {
+                if (winner) {
                     document.getElementById("winLose").innerHTML = "You WON";
                     document.getElementById("newGame").style.display = "block";
                 }
 
-                if (result.data.gameLost) {
+                if (loser) {
                     document.getElementById("winLose").innerHTML = "You LOST";
                     document.getElementById("newGame").style.display = "block";
                 }
